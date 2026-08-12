@@ -1,20 +1,18 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'aryanghugare75@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
+    emailBody: 'Hi Aryan, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    oldPortfolio: 'https://portfolio-seven-rouge-uhjbcyeivc.vercel.app',
+    upworkProfile: '',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/aryanghugare' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/aryan-ghugare/' },
 ];
 
 export const MY_STACK = {
@@ -256,7 +254,7 @@ export const PROJECTS: IProject[] = [
             '/projects/images/consulting-finance-2.png',
             '/projects/images/consulting-finance-3.png',
         ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
+        sourceCode: '',
         liveUrl: 'https://crenotive.netlify.app/',
         year: 2023,
         description:
@@ -274,7 +272,7 @@ export const PROJECTS: IProject[] = [
             '/projects/images/devLinks-2.png',
             '/projects/images/devLinks-3.png',
         ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
+        sourceCode: '',
         liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
         year: 2023,
         description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
@@ -286,23 +284,38 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        id: 1,
+        title: 'Web Developer Intern',
+        company: 'YPP Technologies',
+        duration: 'June 2024 - December 2024',
+        info: "Built scalable React ERP modules and Node.js/Express APIs, optimizing frontend performance, backend latency, and secure RBAC authentication for 5,000+ users."
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
+        id: 2,
+        title: 'Software Engineer (Open Source)',
+        company: 'Formbricks',
+        duration: 'Jan 2026 - Present',
+        info: "Implemented video upload and playback for Welcome Cards with a unified media interface supporting multiple video formats without regressions."
     },
     {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
+        id: 3,
+        title: 'Software Engineer (Open Source)',
+        company: 'Kysely',
+        duration: 'Jan 2026 - Present',
+        info: "Added IF EXISTS support for ALTER TABLE operations by extending Kysely's AST and query compiler, with integration tests across PostgreSQL, MySQL, and SQLite."
     },
     {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        id: 4,
+        title: 'Software Engineer (Open Source)',
+        company: 'Twenty',
+        duration: 'Jan 2026 - Present',
+        info: "Improved the Twenty CRM platform by contributing production-ready frontend fixes and performance improvements to its open-source codebase."
+    },
+    {
+        id: 5,
+        title: 'Software Engineer (Open Source)',
+        company: 'Unkey',
+        duration: 'Jan 2026 - Present',
+        info: "Contributed production-ready improvements to Unkey's open-source infrastructure, focusing on reliable and maintainable TypeScript code."
     },
 ];
