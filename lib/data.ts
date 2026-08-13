@@ -105,7 +105,7 @@ export const MY_STACK = {
         },
     ],
 };
-
+/*
 export const PROJECTS: IProject[] = [
     {
         title: 'Electro EV',
@@ -279,6 +279,212 @@ export const PROJECTS: IProject[] = [
 
             I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
         role: ``,
+    },
+];
+*/
+
+export const PROJECTS: IProject[] = [
+    {
+        title: 'WebCraft AI',
+        slug: 'webcraft-ai',
+        techStack: [
+            'React',
+            'Tailwind CSS',
+            'Node.js',
+            'Express',
+            'PostgreSQL',
+            'Prisma',
+            'OpenAI API',
+        ],
+        thumbnail: '/projects/thumbnail/webcraft-ai.png',
+        longThumbnail: '/projects/long/webcraft-ai.jpg',
+        images: [
+            '/projects/images/webcraft-ai-1.png',
+            '/projects/images/webcraft-ai-2.png',
+            '/projects/images/webcraft-ai-3.png',
+        ],
+        sourceCode: 'https://github.com/aryanghugare/WebCraft-AI',
+        liveUrl: '',
+        year: 2026,
+        description: `An AI-assisted, full-stack website builder that enables users to generate and manage responsive websites using AI-powered layouts, content suggestions, and real-time previews.<br/><br/>
+Key Features:<br/>
+<ul>
+<li>🤖 AI Website Generation: Generates website layouts and content using AI</li>
+<li>🎨 Intelligent Layouts: Creates responsive layouts based on user requirements</li>
+<li>💡 Smart Suggestions: Provides AI-assisted content recommendations</li>
+<li>👀 Real-Time Preview: Instantly preview generated website changes</li>
+<li>🔐 Authentication: Secure user authentication and account management</li>
+<li>📁 Project Management: Create and manage multiple website projects</li>
+</ul>`,
+        role: `Full-Stack Developer<br/>
+<ul>
+<li>🎨 Frontend: Built the website builder interface using React and Tailwind CSS</li>
+<li>🤖 AI Integration: Integrated AI functionality for website generation and content suggestions</li>
+<li>⚙️ Backend: Developed REST APIs using Node.js and Express</li>
+<li>🗄️ Database: Designed PostgreSQL data models using Prisma ORM</li>
+<li>🔐 Authentication: Implemented user authentication and project access management</li>
+<li>📁 Project Management: Developed APIs and UI flows for managing user projects</li>
+</ul>`,
+    },
+    {
+        title: 'ResumeForge-AI',
+        slug: 'resumeforge-ai',
+        techStack: [
+            'React',
+            'Tailwind CSS',
+            'Node.js',
+            'Express',
+            'MongoDB',
+            'OpenAI API',
+        ],
+        thumbnail: '/projects/thumbnail/resume-forge.png',
+        longThumbnail: '/projects/long/resumeforge-ai.jpg',
+        images: [
+            '/projects/images/resumeforge-ai-1.png',
+            '/projects/images/resumeforge-ai-2.png',
+            '/projects/images/resumeforge-ai-3.png',
+        ],
+        sourceCode: 'https://github.com/aryanghugare/ResumeForge-AI',
+        liveUrl: '',
+        year: 2026,
+        description: `An AI-powered, full-stack resume builder that helps users create ATS-friendly resumes with AI-generated content, customizable templates, live previews, and PDF export.<br/><br/>
+Key Features:<br/>
+<ul>
+<li>🤖 AI Content Generation: Generates professional summaries and resume bullet points using OpenAI</li>
+<li>📄 Resume Builder: Section-based editing with customizable resume templates</li>
+<li>👀 Live Preview: Real-time preview of resume changes</li>
+<li>📥 PDF Export: Generates ATS-friendly resume documents</li>
+<li>💾 Auto Save: Automatically persists resume changes for a seamless editing experience</li>
+</ul>`,
+        role: `Full-Stack Developer<br/>
+<ul>
+<li>🎨 Frontend: Built the resume builder interface using React and Tailwind CSS</li>
+<li>🤖 AI Integration: Integrated OpenAI APIs for context-aware resume content generation</li>
+<li>⚙️ Backend: Developed REST APIs using Node.js and Express</li>
+<li>🗄️ Database: Designed MongoDB-based data storage for resume information</li>
+<li>📄 PDF Generation: Implemented client-side PDF generation for resume exports</li>
+<li>⚡ Performance: Implemented debounced auto-saving to reduce unnecessary requests and re-renders</li>
+</ul>`,
+    },
+    {
+        title: 'BlogNest',
+        slug: 'blognest',
+        techStack: [
+            'React',
+            'Redux Toolkit',
+            'Appwrite',
+            'TinyMCE',
+        ],
+        thumbnail: '/projects/thumbnail/blognest.png',
+        longThumbnail: '/projects/long/blognest.jpg',
+        images: [
+            '/projects/images/blognest-1.png',
+            '/projects/images/blognest-2.png',
+        ],
+        sourceCode: 'https://github.com/aryanghugare/BlogNest',
+        liveUrl: '',
+        year: 2026,
+        description: `A full-stack blogging platform built with React, Redux Toolkit, and Appwrite for seamless content management, authentication, and cloud storage.<br/><br/>
+Key Features:<br/>
+<ul>
+<li>📝 Blog Management: Create, edit, and manage blog posts with rich text formatting</li>
+<li>🔐 Authentication: Secure user authentication and session management</li>
+<li>☁️ Cloud Storage: Integrated Appwrite storage for managing media assets</li>
+<li>⚡ Optimistic Updates: Redux Toolkit-powered interactions for responsive user experience</li>
+<li>✍️ Rich Text Editor: Integrated TinyMCE for advanced content creation</li>
+</ul>`,
+        role: `Full-Stack Developer<br/>
+<ul>
+<li>🎨 Frontend: Built the React interface and reusable UI components</li>
+<li>🔄 State Management: Implemented application state using Redux Toolkit</li>
+<li>🔐 Authentication: Integrated Appwrite authentication and session handling</li>
+<li>☁️ Backend Services: Integrated Appwrite database and cloud storage services</li>
+<li>✍️ Content Management: Integrated and configured TinyMCE for rich text editing</li>
+</ul>`,
+    },
+
+
+
+
+
+    {
+        title: 'TaskStack',
+        slug: 'taskstack',
+        techStack: [
+            'Node.js',
+            'Express',
+            'MongoDB',
+            'JWT',
+        ],
+        thumbnail: '/projects/thumbnail/taskstack.jpg',
+        longThumbnail: '/projects/long/taskstack.jpg',
+        images: [
+            '/projects/images/taskstack-1.png',
+            '/projects/images/taskstack-2.png',
+        ],
+        sourceCode: 'https://github.com/aryanghugare/TaskStack',
+        liveUrl: '',
+        year: 2026,
+        description: `A project and workflow management backend designed to provide secure and scalable REST APIs for productivity and task management applications.<br/><br/>
+Key Features:<br/>
+<ul>
+<li>🔐 Secure Authentication: JWT-based authentication for protected resources</li>
+<li>📋 Task Management: Backend APIs for managing projects and workflows</li>
+<li>🔌 REST APIs: Structured APIs for seamless client-server communication</li>
+<li>🗄️ MongoDB: Persistent storage for users, projects, and workflow data</li>
+<li>🏗️ Clean Architecture: Organized backend structure for maintainability and scalability</li>
+</ul>`,
+        role: `Backend Developer<br/>
+<ul>
+<li>⚙️ Backend: Designed and developed the Node.js and Express backend</li>
+<li>🔌 REST APIs: Built RESTful APIs for project and workflow management</li>
+<li>🔐 Authentication: Implemented secure JWT-based authentication</li>
+<li>🗄️ Database: Designed MongoDB schemas and database interactions</li>
+<li>🏗️ Architecture: Structured the application using a clean and maintainable backend architecture</li>
+</ul>`,
+    },
+
+    {
+        title: 'PlayGrid',
+        slug: 'playgrid',
+        techStack: [
+            'Node.js',
+            'Express',
+            'MongoDB',
+            'Mongoose',
+            'Cloudinary',
+            'Multer',
+            'JWT',
+        ],
+        thumbnail: '/projects/thumbnail/playgrid.jpg',
+        longThumbnail: '/projects/long/playgrid.jpg',
+        images: [
+            '/projects/images/playgrid-1.png',
+            '/projects/images/playgrid-2.png',
+            '/projects/images/playgrid-3.png',
+        ],
+        sourceCode: 'https://github.com/aryanghugare/PlayGrid',
+        liveUrl: '',
+        year: 2026,
+        description: `A scalable media-sharing backend designed for efficient video uploads, processing, storage, and delivery with a focus on performance and concurrent media requests.<br/><br/>
+Key Features:<br/>
+<ul>
+<li>🎥 Video Uploads: Stream-based video uploads using Multer and Cloudinary</li>
+<li>⚡ Optimized Search: MongoDB aggregation pipelines with compound indexes for faster queries</li>
+<li>🔐 Authentication: Secure JWT-based authentication and authorization</li>
+<li>☁️ Media Delivery: CDN-backed video delivery for faster global access</li>
+<li>📊 Recommendations: Backend infrastructure for intelligent media recommendations</li>
+<li>🚀 Scalable Architecture: Designed to handle large media files and concurrent requests efficiently</li>
+</ul>`,
+        role: `Backend Developer<br/>
+<ul>
+<li>⚙️ Backend Architecture: Designed and implemented the Node.js and Express backend</li>
+<li>🎥 Media Processing: Implemented stream-based video uploads using Multer and Cloudinary</li>
+<li>🗄️ Database Optimization: Optimized MongoDB aggregation pipelines using compound indexes</li>
+<li>🔐 Authentication: Implemented JWT-based authentication and authorization</li>
+<li>☁️ Media Delivery: Integrated CDN-backed delivery for optimized video streaming</li>
+<li>🚀 Performance: Optimized media processing and API performance for concurrent requests</li>
+</ul>`,
     },
 ];
 
