@@ -73,18 +73,17 @@ const AboutMe = () => {
                     <div className="md:col-span-7">
                         <div className="text-lg text-muted-foreground max-w-[450px]">
                             <p className="slide-up-and-fade">
-                                I&apos;m a Full Stack web developer dedicated to
-                                turning ideas into creative solutions. I
-                                specialize in creating seamless and intuitive
-                                user experiences.
+                                I&apos;m a software engineer working on energy
+                                analytics at Distributed Energy, after shipping
+                                production B2B SaaS at AppExFlow and full-stack
+                                ERP features at YPP Technologies.
                             </p>
                             <p className="mt-3 slide-up-and-fade">
-                                My approach focuses on creating scalable,
-                                high-performing solutions tailored to both user
-                                needs and business objectives. By prioritizing
-                                performance, accessibility, and responsiveness,
-                                I strive to deliver experiences that not only
-                                engage users but also drive tangible results.
+                                I studied Computer Science with a focus on Data
+                                Science at Vidyavardhini&apos;s College of
+                                Engineering. I build with React, Next.js, and
+                                Node.js, and I&apos;ve contributed to Formbricks
+                                and Kysely.
                             </p>
                         </div>
                     </div>

@@ -50,9 +50,8 @@ const Banner = () => {
                         <span className="font-medium text-foreground">
                             Aryan
                         </span>
-                        . A creative Full Stack Developer with 1+ years of
-                        experience in building high-performance, scalable, and
-                        responsive web solutions.
+                        . A full-stack engineer shipping production
+                        products with React, Next.js, and Node.js.
                     </p>
                     <Button
                         as="link"
@@ -66,7 +65,7 @@ const Banner = () => {
                     <div className="flex items-center gap-2 mt-3">
                         <span className="size-3 rounded-full bg-white"></span>
                         <span className="text-sm text-muted-foreground">
-                            Available for full-time opportunities
+                            Software Engineer at Distributed Energy
                         </span>
                     </div>
                 </div>
@@ -82,17 +81,17 @@ const Banner = () => {
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            7+
+                            5
                         </h5>
                         <p className="text-muted-foreground">
-                            Completed Projects
+                            Selected Projects
                         </p>
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            10K+
+                            2
                         </h5>
-                        <p className="text-muted-foreground">Hours Worked</p>
+                        <p className="text-muted-foreground">Open Source PRs</p>
                     </div>
                 </div>
             </div>

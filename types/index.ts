@@ -15,6 +15,16 @@ export type Variant =
     | 'link'
     | 'no-color';
 
+export interface IExperience {
+    id: number;
+    title: string;
+    company: string;
+    duration: string;
+    info: string;
+    highlights: string[];
+    url?: string;
+}
+
 export interface IProject {
     title: string;
     year: number;

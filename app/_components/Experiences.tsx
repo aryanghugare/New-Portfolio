@@ -68,9 +68,26 @@ const Experiences = () => {
                             <p className="text-lg text-muted-foreground">
                                 {item.duration}
                             </p>
-                            <p className="text-lg text-muted-foreground">
+                            <p className="mt-3 max-w-3xl text-lg text-muted-foreground">
                                 {item.info}
                             </p>
+                            {item.highlights?.length ? (
+                                <ul className="mt-4 max-w-3xl list-disc space-y-2 pl-5 text-lg text-muted-foreground">
+                                    {item.highlights.map((point) => (
+                                        <li key={point}>{point}</li>
+                                    ))}
+                                </ul>
+                            ) : null}
+                            {item.url ? (
+                                <a
+                                    href={item.url}
+                                    target="_blank"
+                                    rel="noreferrer noopener"
+                                    className="mt-4 inline-block text-lg text-primary hover:underline"
+                                >
+                                    View contribution
+                                </a>
+                            ) : null}
                         </div>
                     ))}
                 </div>

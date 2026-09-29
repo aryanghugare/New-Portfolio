@@ -1,4 +1,4 @@
-import { IProject } from '@/types';
+import { IExperience, IProject } from '@/types';
 
 export const GENERAL_INFO = {
     email: 'aryanghugare75@gmail.com',
@@ -294,7 +294,8 @@ export const PROJECTS: IProject[] = [
             'Express',
             'PostgreSQL',
             'Prisma',
-            'OpenAI API',
+            'OpenRouter',
+            'Stripe',
         ],
         thumbnail: '/projects/thumbnail/webcraft-ai.png',
         longThumbnail: '/projects/long/webcraft-ai.jpg',
@@ -304,26 +305,25 @@ export const PROJECTS: IProject[] = [
             '/projects/images/webcraft-ai-3.png',
         ],
         sourceCode: 'https://github.com/aryanghugare/WebCraft-AI',
-        liveUrl: '',
+        liveUrl: 'https://web-craft-ai-6ayl.vercel.app/',
         year: 2026,
-        description: `An AI-assisted, full-stack website builder that enables users to generate and manage responsive websites using AI-powered layouts, content suggestions, and real-time previews.<br/><br/>
+        description: `A full-stack AI website builder that turns a plain-English prompt into an editable single-page site. Users can revise the result in chat, preview versions, publish projects, and buy credits.<br/><br/>
 Key Features:<br/>
 <ul>
-<li>🤖 AI Website Generation: Generates website layouts and content using AI</li>
-<li>🎨 Intelligent Layouts: Creates responsive layouts based on user requirements</li>
-<li>💡 Smart Suggestions: Provides AI-assisted content recommendations</li>
-<li>👀 Real-Time Preview: Instantly preview generated website changes</li>
-<li>🔐 Authentication: Secure user authentication and account management</li>
-<li>📁 Project Management: Create and manage multiple website projects</li>
+<li>🤖 Prompt to website: Generates a site from a written prompt</li>
+<li>💬 Revisions: Chat-based edits with conversation history and version rollback</li>
+<li>👀 Live preview: Iframe preview with a simple visual element editor</li>
+<li>🌐 Community: Public feed of published projects</li>
+<li>💳 Credits: Usage-based credits with Stripe checkout</li>
+<li>🔐 Authentication: Email and password auth with Better Auth</li>
 </ul>`,
         role: `Full-Stack Developer<br/>
 <ul>
-<li>🎨 Frontend: Built the website builder interface using React and Tailwind CSS</li>
-<li>🤖 AI Integration: Integrated AI functionality for website generation and content suggestions</li>
-<li>⚙️ Backend: Developed REST APIs using Node.js and Express</li>
-<li>🗄️ Database: Designed PostgreSQL data models using Prisma ORM</li>
-<li>🔐 Authentication: Implemented user authentication and project access management</li>
-<li>📁 Project Management: Developed APIs and UI flows for managing user projects</li>
+<li>🎨 Frontend: Built the builder, preview, and community UI with React, TypeScript, and Tailwind CSS</li>
+<li>🤖 AI: Wired OpenRouter through the OpenAI SDK for generation and revisions</li>
+<li>⚙️ Backend: Built Express APIs for projects, revisions, publishing, and credits</li>
+<li>🗄️ Database: Modeled projects and versions in PostgreSQL with Prisma</li>
+<li>💳 Billing: Integrated Stripe checkout and webhooks for credit purchases</li>
 </ul>`,
     },
     {
@@ -339,31 +339,27 @@ Key Features:<br/>
         ],
         thumbnail: '/projects/thumbnail/resume-forge.png',
         longThumbnail: '/projects/long/resumeforge-ai.jpg',
-        images: [
-            '/projects/images/resumeforge-ai-1.png',
-            '/projects/images/resumeforge-ai-2.png',
-            '/projects/images/resumeforge-ai-3.png',
-        ],
+        images: ['/projects/images/resumeforge-ai-1.png'],
         sourceCode: 'https://github.com/aryanghugare/ResumeForge-AI',
-        liveUrl: '',
+        liveUrl: 'https://resume-forge-ai-seven.vercel.app',
         year: 2026,
-        description: `An AI-powered, full-stack resume builder that helps users create ATS-friendly resumes with AI-generated content, customizable templates, live previews, and PDF export.<br/><br/>
+        description: `An AI resume builder that writes ATS-friendly summaries and bullet points, keeps a live preview in sync, and exports a client-side PDF.<br/><br/>
 Key Features:<br/>
 <ul>
-<li>🤖 AI Content Generation: Generates professional summaries and resume bullet points using OpenAI</li>
-<li>📄 Resume Builder: Section-based editing with customizable resume templates</li>
-<li>👀 Live Preview: Real-time preview of resume changes</li>
-<li>📥 PDF Export: Generates ATS-friendly resume documents</li>
-<li>💾 Auto Save: Automatically persists resume changes for a seamless editing experience</li>
+<li>🤖 AI writing: Structured prompts generate summaries and quantitative bullets in under 3 seconds</li>
+<li>📄 Builder: Section editing across multiple professional templates</li>
+<li>👀 Live preview: Resume state stays in sync while the user edits</li>
+<li>📥 PDF export: Client-side PDF generation with ATS-friendly layout fidelity</li>
+<li>💾 Auto-save: Debounced saves and modular JSON data to avoid extra React re-renders</li>
+<li>📎 PDF import: Upload an existing resume and fill the builder from it</li>
 </ul>`,
         role: `Full-Stack Developer<br/>
 <ul>
-<li>🎨 Frontend: Built the resume builder interface using React and Tailwind CSS</li>
-<li>🤖 AI Integration: Integrated OpenAI APIs for context-aware resume content generation</li>
-<li>⚙️ Backend: Developed REST APIs using Node.js and Express</li>
-<li>🗄️ Database: Designed MongoDB-based data storage for resume information</li>
-<li>📄 PDF Generation: Implemented client-side PDF generation for resume exports</li>
-<li>⚡ Performance: Implemented debounced auto-saving to reduce unnecessary requests and re-renders</li>
+<li>🎨 Frontend: Built the editor, templates, and live preview with React and Tailwind CSS</li>
+<li>🤖 AI: Integrated OpenAI for context-aware summaries and experience bullets</li>
+<li>⚙️ Backend: Built Express APIs for resumes, auth, and AI enhancement</li>
+<li>🗄️ Database: Stored resume documents in MongoDB</li>
+<li>⚡ Performance: Debounced auto-save so editing does not re-render the whole form</li>
 </ul>`,
     },
     {
@@ -377,21 +373,18 @@ Key Features:<br/>
         ],
         thumbnail: '/projects/thumbnail/blognest.png',
         longThumbnail: '/projects/long/blognest.jpg',
-        images: [
-            '/projects/images/blognest-1.png',
-            '/projects/images/blognest-2.png',
-        ],
+        images: ['/projects/images/blognest-1.png'],
         sourceCode: 'https://github.com/aryanghugare/BlogNest',
-        liveUrl: '',
+        liveUrl: 'https://blog-nest-sigma.vercel.app',
         year: 2026,
-        description: `A full-stack blogging platform built with React, Redux Toolkit, and Appwrite for seamless content management, authentication, and cloud storage.<br/><br/>
+        description: `A blogging platform for writing, editing, and reading posts, with authentication, cloud storage, and a rich text editor.<br/><br/>
 Key Features:<br/>
 <ul>
-<li>📝 Blog Management: Create, edit, and manage blog posts with rich text formatting</li>
-<li>🔐 Authentication: Secure user authentication and session management</li>
-<li>☁️ Cloud Storage: Integrated Appwrite storage for managing media assets</li>
-<li>⚡ Optimistic Updates: Redux Toolkit-powered interactions for responsive user experience</li>
-<li>✍️ Rich Text Editor: Integrated TinyMCE for advanced content creation</li>
+<li>📝 Posts: Create, edit, delete, and view posts with an active/draft status</li>
+<li>🔐 Authentication: Signup, login, and session handling through Appwrite</li>
+<li>☁️ Media: Featured images stored in Appwrite and attached to each post</li>
+<li>⚡ State: Redux Toolkit keeps auth state and supports responsive post interactions</li>
+<li>✍️ Editor: TinyMCE for rich text, with a textarea fallback if the editor cannot load</li>
 </ul>`,
         role: `Full-Stack Developer<br/>
 <ul>
@@ -418,12 +411,9 @@ Key Features:<br/>
         ],
         thumbnail: '/projects/thumbnail/taskstack.jpg',
         longThumbnail: '/projects/long/taskstack.jpg',
-        images: [
-            '/projects/images/taskstack-1.png',
-            '/projects/images/taskstack-2.png',
-        ],
+        images: ['/projects/images/taskstack-1.png'],
         sourceCode: 'https://github.com/aryanghugare/TaskStack',
-        liveUrl: '',
+        liveUrl: 'https://github.com/aryanghugare/TaskStack',
         year: 2026,
         description: `A project and workflow management backend designed to provide secure and scalable REST APIs for productivity and task management applications.<br/><br/>
 Key Features:<br/>
@@ -461,20 +451,18 @@ Key Features:<br/>
         images: [
             '/projects/images/playgrid-1.png',
             '/projects/images/playgrid-2.png',
-            '/projects/images/playgrid-3.png',
         ],
         sourceCode: 'https://github.com/aryanghugare/PlayGrid',
-        liveUrl: '',
+        liveUrl: 'https://play-grid-ruby.vercel.app',
         year: 2026,
-        description: `A scalable media-sharing backend designed for efficient video uploads, processing, storage, and delivery with a focus on performance and concurrent media requests.<br/><br/>
+        description: `A media-sharing backend for stream-based video uploads, indexed search, and CDN delivery.<br/><br/>
 Key Features:<br/>
 <ul>
-<li>🎥 Video Uploads: Stream-based video uploads using Multer and Cloudinary</li>
-<li>⚡ Optimized Search: MongoDB aggregation pipelines with compound indexes for faster queries</li>
-<li>🔐 Authentication: Secure JWT-based authentication and authorization</li>
-<li>☁️ Media Delivery: CDN-backed video delivery for faster global access</li>
-<li>📊 Recommendations: Backend infrastructure for intelligent media recommendations</li>
-<li>🚀 Scalable Architecture: Designed to handle large media files and concurrent requests efficiently</li>
+<li>🎥 Uploads: Stream-based video uploads with Multer and Cloudinary so large files do not sit in server memory</li>
+<li>⚡ Search: MongoDB aggregation with compound indexes, under 100ms on 10,000+ mock records</li>
+<li>🔐 Auth: JWT authentication and authorization</li>
+<li>☁️ Delivery: CDN-backed video delivery, about 2 seconds faster for concurrent clients</li>
+<li>🎬 Product: A public site for browsing and sharing video</li>
 </ul>`,
         role: `Backend Developer<br/>
 <ul>
@@ -488,40 +476,63 @@ Key Features:<br/>
     },
 ];
 
-export const MY_EXPERIENCE = [
+export const MY_EXPERIENCE: IExperience[] = [
     {
         id: 1,
-        title: 'Web Developer Intern',
-        company: 'YPP Technologies',
-        duration: 'June 2024 - December 2024',
-        info: "Built scalable React ERP modules and Node.js/Express APIs, optimizing frontend performance, backend latency, and secure RBAC authentication for 5,000+ users."
+        title: 'Software Engineer',
+        company: 'Distributed Energy',
+        duration: 'Sept 2026 – Present',
+        info: 'Building the Utility Bills dashboard and the analytics behind daily energy usage.',
+        highlights: [
+            'Developing a redesigned Utility Bills dashboard with scenario modeling and an AI Advisor so users can explore energy savings.',
+            'Engineered backend analytics and reset-aware aggregation so multi-day charts resolve daily kWh correctly.',
+        ],
     },
     {
         id: 2,
-        title: 'Software Engineer (Open Source)',
-        company: 'Formbricks',
-        duration: 'Jan 2026 - Present',
-        info: "Implemented video upload and playback for Welcome Cards with a unified media interface supporting multiple video formats without regressions."
+        title: 'Full Stack Engineer',
+        company: 'AppExFlow',
+        duration: 'May 2026 – Sept 2026 · Mumbai',
+        info: 'Shipped features across three production B2B SaaS platforms in Next.js, React, and Node.js.',
+        highlights: [
+            'Owned end-to-end delivery across three concurrent codebases, from requirements through deployment.',
+            'Built an AI-powered e-signature pipeline with multi-signer audit trails, and a credit-based billing system for an SEO content engine.',
+            'Built a structured interview platform for video and written submissions with real-time identity verification.',
+        ],
     },
     {
         id: 3,
-        title: 'Software Engineer (Open Source)',
-        company: 'Kysely',
-        duration: 'Jan 2026 - Present',
-        info: "Added IF EXISTS support for ALTER TABLE operations by extending Kysely's AST and query compiler, with integration tests across PostgreSQL, MySQL, and SQLite."
+        title: 'Web Developer Intern',
+        company: 'YPP Technologies',
+        duration: 'June 2024 – Dec 2024 · Mumbai',
+        info: 'Built full-stack ERP features and a role-based auth system used by 5,000+ people.',
+        highlights: [
+            'Shipped ERP features with React 19, Node.js, and Express. Code splitting cut initial page loads by about 1.2s, and Appwrite indexes brought API latency under 200ms.',
+            'Implemented RBAC with JWT and bcrypt, including authentication and concurrent session persistence for 5,000+ active users.',
+        ],
     },
     {
         id: 4,
-        title: 'Software Engineer (Open Source)',
-        company: 'Twenty',
-        duration: 'Jan 2026 - Present',
-        info: "Improved the Twenty CRM platform by contributing production-ready frontend fixes and performance improvements to its open-source codebase."
+        title: 'Open Source Contributor',
+        company: 'Formbricks',
+        duration: 'PR #7497 · Merged',
+        info: 'Welcome Card video upload and playback in React, TypeScript, and Next.js.',
+        highlights: [
+            'Added a unified ElementMedia interface so welcome cards can hold different media states.',
+            'Supported .mp4 and .mov with the maintainers, without regressions in existing survey schemas.',
+        ],
+        url: 'https://github.com/formbricks/formbricks/pull/7497',
     },
     {
         id: 5,
-        title: 'Software Engineer (Open Source)',
-        company: 'Unkey',
-        duration: 'Jan 2026 - Present',
-        info: "Contributed production-ready improvements to Unkey's open-source infrastructure, focusing on reliable and maintainable TypeScript code."
+        title: 'Open Source Contributor',
+        company: 'Kysely',
+        duration: 'PR #1720',
+        info: 'IF EXISTS support for ALTER TABLE in the type-safe SQL query builder.',
+        highlights: [
+            'Extended the AST and query compiler so ALTER TABLE can emit IF EXISTS.',
+            'Wrote integration tests for PostgreSQL, MySQL, and SQLite so the SQL stays type-safe and idempotent.',
+        ],
+        url: 'https://github.com/kysely-org/kysely/pull/1720',
     },
 ];
